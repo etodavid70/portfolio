@@ -145,6 +145,181 @@ p, a, h1, h2, h3, h4, h5, label, button {
     color: #0d1116;
   }
 }
+.overlay-link {
+  color: #f8f9fa;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 0.5rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &-content {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    z-index: 1001;
+    color: rgb(39, 40, 34);
+    display: flex;
+    flex-direction: column;
+
+    h2, h3 {
+      color: rgb(39, 40, 34);
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-scrollable {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 1rem;
+    margin-top: 1rem;
+
+    /* Add scrollbar styling */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(39, 40, 34);
+  }
+
+  &-date {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  &-link {
+
+    //this is the one that handles link
+    //color: #f97314;
+
+    background-color: #5000ca;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Light mode adjustments */
+.light-mode {
+  .overlay {
+    &-content {
+      background: #f8f9fa;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &-close {
+      color: #0d1116;
+    }
+
+    &-scrollable {
+      &::-webkit-scrollbar-track {
+        background: #e1e1e1;
+      }
+    }
+  }
+}
+
+//for project pop up
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
 
 @media screen {
   @media (max-width: 768px) {

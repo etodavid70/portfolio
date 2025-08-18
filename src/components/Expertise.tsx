@@ -1,90 +1,104 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faReact, faDocker, faPython, faAndroid} from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Kotlin",
+    "Java",
+    "Android Studio",
+    "XML Layout",
+    "Android SDK",
+    "Jetpack Compose",
+    "Gradle",
+    "WorkManager",
+    "MVVM"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Dart",
+    "Flutter SDk",
+    "FVM",
+    "android",
+    "ios",
+    "Getx",
+    "Provider",
+    "RiverPod",
+    "MVC",
+    "MVVM"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Javascript",
+    "Typescript",
+    "Redux",
+    "Zustand",
+    "Axios",
+    "Android",
+    "ios",
 ];
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+        <div className="container" id="expertise">
+            <div className="skills-container">
+                <h1>Expertise</h1>
+                <div className="skills-grid">
+                    <div className="skill">
+                        <FontAwesomeIcon icon={faAndroid} size="3x" style={{color: "#3ddc84"}}/>
+                        <h3>Android Native(Kotlin)</h3>
+                        <p>Deep knowledge of Android SDK and modern
+                            Android architecture components, MVVM and Clean
+                            Architecture</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {labelsFirst.map((label, index) => (
+                                <Chip key={index} className='chip' label={label}/>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                    <div className="skill">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                            alt="Flutter"
+                            width={150}
+                        />
+                        <h3>Flutter</h3>
+                        <p>
+                            Expertise in Flutter for cross-platform (iOS and
+                            Android) app development.
+                            Knowledge of state management solutions like
+                            GetX (or alternatives like Riverpod, Provider,
+                            BLoC).</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {labelsSecond.map((label, index) => (
+                                <Chip key={index} className='chip' label={label}/>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                    <div className="skill">
+                        <FontAwesomeIcon icon={faReact} size="3x" style={{ color: "#58c4dc"}}/>
+                        <h3>React Native</h3>
+                        <p>Proficient in building cross-platform mobile
+                            applications using React Native.
+                            Strong understanding of React components, hooks
+                            (useState, useEffect, useContext), and state
+                            management using Redux or Zustand.</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {labelsThird.map((label, index) => (
+                                <Chip key={index} className='chip' label={label}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 

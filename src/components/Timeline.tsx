@@ -16,50 +16,50 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="January 2025 – July 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Polaris Digitech, Ikeja, Lagos</h3>
+            <h4 className="vertical-timeline-element-subtitle">Mobile Engineer| SDK Developer (Contract)</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+             Tech Stack: Kotlin , Flutter, React Native
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="April 2024 – September 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Tm30, Lagos.</h3>
+            <h4 className="vertical-timeline-element-subtitle">Mobile Application Developer (Contract)</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+            Tech Stack: Kotlin & Flutter
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="October 2023 – March 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Tech Champions, IKeja, Lagos</h3>
+            <h4 className="vertical-timeline-element-subtitle">Mobile Application Developer(Hybrid, Contract)</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+           Tech Stack: Flutter
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="March 2022 – September 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Globaltech World Computer Institute</h3>
+            <h4 className="vertical-timeline-element-subtitle">Mobile App Developer| Backend Engineer</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Tech Stack: Flutter & Django
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
