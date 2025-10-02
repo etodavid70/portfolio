@@ -10,7 +10,7 @@ function Main() {
       <div className="about-section">
         <div className="image-wrapper">
           {/*<img src="../assets/images/passport.jpeg" alt="Avatar" />*/}
-              <img src="https://media.licdn.com/dms/image/v2/D4D03AQEF5LH-bJK_PA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695977822049?e=1758153600&v=beta&t=cPK23-RTHuH5BIsu1Z83hNRVoBOod9S6mGTDN3bvcOM" alt="Avatar" />
+              <img src="https://drive.google.com/file/d/1F6IENDSjsuMgcWrWechvaEfsNScNU0w-/view?usp=drive_link" alt="Eto" />
         </div>
         <div className="content">
           <div className="social_icons">
