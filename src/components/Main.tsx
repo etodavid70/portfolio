@@ -2,6 +2,8 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import ProfilePic from "../assets/images/profile_pic.png";
+
 
 function Main() {
 
@@ -9,8 +11,9 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          {/*<img src="../assets/images/passport.jpeg" alt="Avatar" />*/}
-              <img src="https://drive.google.com/file/d/1F6IENDSjsuMgcWrWechvaEfsNScNU0w-/view?usp=drive_link" alt="Eto" />
+
+              {/* <img src="../assets/images/profile_pic.png" alt="Avatar" /> */}
+               <img src={ProfilePic} className="zoom" alt="thumbnail" width="500" />
         </div>
         <div className="content">
           <div className="social_icons">
