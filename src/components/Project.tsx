@@ -3,6 +3,7 @@ import DAV from "../assets/images/DAV.png";
 import Payarena from "../assets/images/payarena.jpg";
 import WhiteCrust from "../assets/images/whitecrust.png";
 import Iknow from "../assets/images/iknow.png"
+import Carenestpro from "../assets/images/carenestpro.jpg";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -21,6 +22,32 @@ function Project() {
         <div className="projects-container" id="projects">
             <h1>Projects</h1>
             <div className="projects-grid">
+
+                 {/*Carenestpro*/}
+                <div className="project">
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.carenestpro.care_app&pcampaignid=web_share"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={Carenestpro} className="zoom" alt="thumbnail" width="50%"/>
+                    </a>
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.carenestpro.care_app&pcampaignid=web_share"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <h2>Carenestpro Connect</h2>
+                    </a>
+                    <p>
+                        Developed the latest version of the Carenestpro Mobile application.
+                        CareNestPro Connect is a trusted care platform that helps families, 
+                        individuals, and organizations find verified care professionals 
+                        while empowering caregivers and healthcare professionals with career opportunities
+                    </p>
+                </div>
+
+
                 {/* DAV */}
                 <div className="project">
                     {/* Image triggers popup instead of navigation */}
@@ -71,14 +98,14 @@ function Project() {
 
                 <div className="project">
                     <a
-                        href="https://play.google.com/store/apps/details?id=com.unifiedpayment.payarena"
+                        href="https://play.google.com/store/apps/details?id=com.tm30.whitecrustng&pcampaignid=web_share"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <img src={WhiteCrust} className="zoom" alt="thumbnail" width="50%"/>
                     </a>
                     <a
-                        href="https://play.google.com/store/apps/details?id=com.unifiedpayment.payarena"
+                        href="https://play.google.com/store/apps/details?id=com.tm30.whitecrustng&pcampaignid=web_share"
                         target="_blank"
                         rel="noreferrer"
                     >

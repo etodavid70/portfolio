@@ -58,9 +58,32 @@ function Timeline() {
   const [openOverlayId, setOpenOverlayId] = useState<string | null>(null);
 
   const jobExperiences: JobExperience[] = [
+
+
+     {
+      id: "carenestpro",
+      date: "October 2025 – Present",
+      location: "Lagos State, Nigeria",
+      title: "Carenestpro",
+      subtitle: "Lead Engineer| (Contract)",
+      techStack: "Flutter, Django",
+      details: (
+        <div>
+          <p>As the Lead Engineer, I led the development of the Carenestpro Connect Web and Mobile applications.</p>
+          <ul>
+
+            <li>Built the backend API with Django, ensuring scalability and performance for handling large volumes of user data.</li>
+            <li>Led a team of Mobile developers in implementing the mobile application features.</li>
+            <li>Led a team of Web developers in implementing the web application features.</li>
+           
+          </ul>
+        </div>
+      ),
+
+    },
     {
       id: "polaris",
-      date: "January 2025 – Present",
+      date: "January 2025 – September 2025",
       location: "Lagos State, Nigeria",
       title: "Polaris Digitech",
       subtitle: "Mobile Engineer| SDK Developer(Contract)",

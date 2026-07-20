@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import { Typography, useTheme } from '@mui/material';
 
 function Contact() {
 
@@ -20,36 +21,7 @@ function Contact() {
 
   const form = useRef();
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
-
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
-
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
-  };
+ const theme = useTheme();
 
   return (
     <div id="contact">
@@ -58,16 +30,22 @@ function Contact() {
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
 
-          <div className="contact-info">
-            <div className="contact-item">
-              <EmailIcon sx={{ color: 'red' }} />
-              <span style={{ fontWeight: 'bold' }}>davideto43@gmail.com</span>
-            </div>
-            <div className="contact-item">
-              <PhoneIcon sx={{ color: 'blue' }} />
-              <span style={{ fontWeight: 'bold' }}>+234 8039907187</span>
-            </div>
-          </div>
+        
+             <div className="contact-info">
+      <div className="contact-item">
+        <EmailIcon sx={{ color : '#e91e63' }} />
+        <Typography component="span" sx={{ color:  '#e91e63' }}>
+          davideto43@gmail.com
+        </Typography>
+      </div>
+      <div className="contact-item">
+        <PhoneIcon  sx={{ color : '#1976d2' }}/>
+        <Typography component="span" sx={{ color : '#1976d2' }}>
+          (+234) 803 990 7187
+        </Typography>
+      </div>
+    </div>
+          
          
         </div>
       </div>
